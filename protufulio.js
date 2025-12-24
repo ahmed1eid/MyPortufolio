@@ -1,30 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile Menu Toggle
-    const mobileBtn = document.querySelector('.mobile-menu-btn');
-    const nav = document.querySelector('.nav');
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const navList = document.querySelector('.nav-list');
+    const navLinks = document.querySelectorAll('.nav-link');
 
-    if (mobileBtn) {
-        mobileBtn.addEventListener('click', () => {
-            nav.classList.toggle('active');
-            mobileBtn.classList.toggle('active');
+    // فتح وإغلاق قائمة الموبايل
+    menuBtn.addEventListener('click', () => {
+        navList.classList.toggle('active');
+
+        // تحريك أيقونة القائمة (اختياري)
+        const bars = document.querySelectorAll('.bar');
+        bars.forEach(bar => bar.classList.toggle('active'));
+    });
+
+    // إغلاق القائمة عند الضغط على أي رابط
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navList.classList.remove('active');
         });
-    }
+    });
 
-    // Scroll Animations
-    const observerOptions = {
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, observerOptions);
-
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(section => {
-        observer.observe(section);
+    // تأثير بسيط عند إرسال الفورم
+    const contactForm = document.querySelector('.contact-form');
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thank you, Ahmed! Your message has been sent (Demo).');
+        contactForm.reset();
     });
 });

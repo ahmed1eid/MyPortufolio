@@ -8,15 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="protufulio.css">
 </head>
 
 <body>
+
     <header class="header">
         <div class="container header-container">
-            <a href="#" class="logo">Ahmed Eid.</a>
+            <a href="#" class="logo">Ahmed Eid<span>.</span></a>
             <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="#hero" class="nav-link">Home</a></li>
@@ -25,7 +27,7 @@
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <button class="mobile-menu-btn">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -53,14 +55,13 @@
                     I am a passionate programmer with a love for logic and structure. My goal is to write clean,
                     efficient code that powers amazing digital experiences.
                 </p>
-
                 <div class="skills-grid">
-                    <div class="skill-item">HTML5</div>
-                    <div class="skill-item">CSS3</div>
-                    <div class="skill-item">JavaScript</div>
-                    <div class="skill-item">React</div>
-                    <div class="skill-item">Node.js</div>
-                    <div class="skill-item">UI Design</div>
+                    <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+                    <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+                    <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                    <div class="skill-item"><i class="fab fa-react"></i> React</div>
+                    <div class="skill-item"><i class="fab fa-node-js"></i> Node.js</div>
+                    <div class="skill-item"><i class="fas fa-code"></i> UI Design</div>
                 </div>
             </div>
         </section>
@@ -73,7 +74,7 @@
                         <div class="project-image" style="background: linear-gradient(45deg, #2b2d42, #8d99ae);"></div>
                         <div class="project-info">
                             <h3>E-Commerce Dashboard</h3>
-                            <p>A responsive dashboard with real-time data visualization and dark mode support.</p>
+                            <p>A responsive dashboard with real-time data visualization.</p>
                             <a href="#" class="btn-text">View Project &rarr;</a>
                         </div>
                     </div>
@@ -81,7 +82,7 @@
                         <div class="project-image" style="background: linear-gradient(45deg, #3a0ca3, #f72585);"></div>
                         <div class="project-info">
                             <h3>Social Media App</h3>
-                            <p>Full-stack application with real-time messaging and user profiles.</p>
+                            <p>Full-stack application with real-time messaging.</p>
                             <a href="#" class="btn-text">View Project &rarr;</a>
                         </div>
                     </div>
@@ -89,7 +90,7 @@
                         <div class="project-image" style="background: linear-gradient(45deg, #023e8a, #00b4d8);"></div>
                         <div class="project-info">
                             <h3>Portfolio V1</h3>
-                            <p>My first portfolio site built with pure HTML and CSS, focusing on accessibility.</p>
+                            <p>My first portfolio site built with pure HTML and CSS.</p>
                             <a href="#" class="btn-text">View Project &rarr;</a>
                         </div>
                     </div>
@@ -100,23 +101,16 @@
         <section id="contact" class="section contact">
             <div class="container">
                 <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-info-container" style="text-align: center; margin-bottom: 30px;">
-                    <p>Email: <a href="mailto:eid93461@gmail.com"
-                            style="color: var(--accent-color);">eid93461@gmail.com</a></p>
-                    <p>Phone: 01141093544</p>
-                    <p>GitHub: <a href="https://github.com/ahmed1eid" target="_blank"
-                            style="color: var(--accent-color);">github.com/ahmed1eid</a></p>
+                <div class="contact-info-container">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:eid93461@gmail.com">eid93461@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> 01141093544</p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/ahmed1eid"
+                            target="_blank">github.com/ahmed1eid</a></p>
                 </div>
                 <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Message" rows="5" required></textarea>
-                    </div>
+                    <div class="form-group"><input type="text" placeholder="Name" required></div>
+                    <div class="form-group"><input type="email" placeholder="Email" required></div>
+                    <div class="form-group"><textarea placeholder="Message" rows="5" required></textarea></div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
