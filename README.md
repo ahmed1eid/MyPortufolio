@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ahmed Portfolio
 
 Welcome to the Ahmed Portfolio project! This repository showcases my work and skills as a web developer. The portfolio highlights my projects, services, and professional background, allowing potential clients and employers to get a sense of my expertise.
@@ -48,3 +49,6 @@ For inquiries, please reach out to me at:
 ![project demo](media/portfolio.png)
 
 Thank you for visiting my portfolio!
+=======
+my portofolio
+>>>>>>> 23c3cc28da02961fb24c73e74a76b757ac06585b
