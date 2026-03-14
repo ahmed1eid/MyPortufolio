@@ -4,7 +4,7 @@
 Welcome to the Ahmed Portfolio project! This repository showcases my work and skills as a web developer. The portfolio highlights my projects, services, and professional background, allowing potential clients and employers to get a sense of my expertise.
 
 ## Live Demo
-You can view the live version of the portfolio at:[Ahmed Portfolio](https://islam412.github.io/Islam-Portfolio/)
+You can view the live version of the portfolio at:[Ahmed Portfolio](https://github.com/ahmed1eid/MyPortufolio)
 
 ## Project Description
 
@@ -30,8 +30,8 @@ Installation
 To run the project locally, clone the repository and open the index.html file in your web browser:
 bash
 
-git clone https://github.com/ahmed1eid/Islam-Portfolio.git
-cd Islam-Portfolio
+git clone https://github.com/ahmed1eid/MyPortufolio
+cd Portfolio
 open index.html (at any prowser)
 
 Contribution
